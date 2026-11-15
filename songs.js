@@ -260,7 +260,6 @@ const SONGS = [
   {"file": "I_The ODD Of LOVE_2023.mp3", "title": "I", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
   {"file": "Spark_The ODD Of LOVE_2023.mp3", "title": "Spark", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
   {"file": "No Love Again_The ODD Of LOVE_2023.mp3", "title": "No Love Again", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
-  {"file": "Better Bae_The ODD Of LOVE_2023.mp3", "title": "Better Babe", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
   {"file": "U R_Butterfly Kiss_2016.mp3", "title": "U R", "original": "TAEYEON", "year": 2016, "program": "Butterfly Kiss Concert"},
   {"file": "I'm OK_JAPAN TOUR 2019 Signal_2019.mp3", "title": "I'm OK", "original": "TAEYEON", "year": 2019, "program": "JAPAN TOUR 2019 Signal"},
   {"file": "Time Lapse_The UNSEEN_2020.mp3", "title": "Time Lapse", "original": "TAEYEON", "year": 2020, "program": "The UNSEEN"},
