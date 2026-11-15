@@ -11,6 +11,7 @@ const MUSIC_PARTS = {
 };
 
 const SONGS = [
+  {"file": "Panorama at TIMA_Live Performance_2026.mp3", "title": "Panorama at TIMA", "original": "TAEYEON", "year": 2026, "program": "Live Performance", "added": "2026-11-15"},
   {"file": "Love Is All I Know.mp3", "title": "Love Is All I Know", "original": "Sim Soo-bong", "year": 2019, "program": "Begin Again 3"},
   {"file": "Time Spent Walking Through Memories.mp3", "title": "Time Walking On Memory", "original": "Nell", "year": 2019, "program": "Begin Again 3"},
   {"file": "When We Were Young.mp3", "title": "When We Were Young", "original": "Adele", "year": 2019, "program": "Begin Again 3"},
@@ -83,6 +84,8 @@ const SONGS = [
   {"file": "Four Seasons_MADLY MEDLEY_2025.mp3", "title": "Four Seasons", "original": "TAEYEON", "year": 2025, "program": "MADLY MEDLEY", "added": "2026-11-12"},
   {"file": "Disaster (The TENSE@Taipei).mp3", "title": "Disaster (at Taipei)", "original": "TAEYEON", "year": 2025, "program": "The TENSE"},
   {"file": "My Tragedy (The TENSE@Taipei).mp3", "title": "My Tragedy (at Taipei)", "original": "TAEYEON", "year": 2025, "program": "The TENSE"},
+  {"file": "Four Seasons (at Singapore)_The TENSE_2025.mp3", "title": "Four Seasons (at Singapore)", "original": "TAEYEON", "year": 2025, "program": "The TENSE", "added": "2026-11-15"},
+  {"file": "Blur (at Singapore)_The TENSE_2025.mp3", "title": "Blur (at Singapore)", "original": "TAEYEON", "year": 2025, "program": "The TENSE", "added": "2026-11-15"},
   {"file": "Ending Credits (The TENSE@Seoul).mp3", "title": "Ending Credits", "original": "TAEYEON", "year": 2025, "program": "The TENSE"},
   {"file": "Toddler.mp3", "title": "Toddler", "original": "TAEYEON", "year": 2022, "program": "Live Clip"},
   {"file": "Some Nights.mp3", "title": "Some Nights", "original": "TAEYEON", "year": 2022, "program": "Live Clip"},
@@ -250,6 +253,14 @@ const SONGS = [
   {"file": "Better Babe_The UNSEEN_2020.mp3", "title": "Better Babe", "original": "TAEYEON", "year": 2020, "program": "The UNSEEN"},
   {"file": "Stress_'s...one TAEYEON Concert_2019.mp3", "title": "Stress", "original": "TAEYEON", "year": 2019, "program": "'s...one TAEYEON Concert"},
   {"file": "Drawing Our Moments_The ODD Of LOVE_2023.mp3", "title": "Drawing Our Moments", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE"},
+  {"file": "INVU_The ODD Of LOVE_2023.mp3", "title": "INVU", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
+  {"file": "Cold as Hell _The ODD Of LOVE_2023.mp3", "title": "Cold As Hell", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
+  {"file": "Timeless_The ODD Of LOVE_2023.mp3", "title": "Timeless", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
+  {"file": "Fine_The ODD Of LOVE_2023.mp3", "title": "Fine", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
+  {"file": "I_The ODD Of LOVE_2023.mp3", "title": "I", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
+  {"file": "Spark_The ODD Of LOVE_2023.mp3", "title": "Spark", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
+  {"file": "No Love Again_The ODD Of LOVE_2023.mp3", "title": "No Love Again", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
+  {"file": "Better Bae_The ODD Of LOVE_2023.mp3", "title": "Better Babe", "original": "TAEYEON", "year": 2023, "program": "The ODD Of LOVE", "added": "2026-11-15"},
   {"file": "U R_Butterfly Kiss_2016.mp3", "title": "U R", "original": "TAEYEON", "year": 2016, "program": "Butterfly Kiss Concert"},
   {"file": "I'm OK_JAPAN TOUR 2019 Signal_2019.mp3", "title": "I'm OK", "original": "TAEYEON", "year": 2019, "program": "JAPAN TOUR 2019 Signal"},
   {"file": "Time Lapse_The UNSEEN_2020.mp3", "title": "Time Lapse", "original": "TAEYEON", "year": 2020, "program": "The UNSEEN"},
