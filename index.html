@@ -628,9 +628,10 @@ const PAUSE_PATH = "M6 5h4v14H6zm8 0h4v14h-4z";
 // "bottom" (above the version line), "search" (when a search finds nothing)
 const REQUEST_URL = "https://tally.so/r/OQQQka";
 const REQUEST_SPOTS = ["top"];
-const VERSION = "2026-11-20 v23";
+const VERSION = "2026-11-20 v24";
 const UI = {
   en: {
+    tabNew: "New", nsBarTab: "{n} songs added in the last 30 days · newest first",
     share: "Share song", linkCopied: "Link copied", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "Shared song ready. Tap play to listen",
     playNext: "Play next", addQueue: "Add to queue", addedQueue: "Added to queue", addedNext: "Will play next", queueTitle: "Queue", nowPlaying: "Now playing", upNextQueue: "Next in queue", upNextList: "Next from the list", clearQueue: "Clear queue", queueEmpty: "Nothing queued. Tap + next to a song to add it.", addToPlaylist: "Add to playlist", openQueue: "Open queue", removeQ: "Remove from queue", nothingPlaying: "Nothing playing yet.",
     tabAll: "All songs", tabPrograms: "Programs", tabLiked: "Liked", tabLists: "Playlists",
@@ -657,6 +658,7 @@ const UI = {
     tabTop: "My Top 10", topTitle: "My Top 10 · {y}", topTotal: "You played {n} songs in {y}", topTotal1: "You played 1 song in {y}", topDistinct: "{n} different songs", topDistinct1: "1 different song", topPlays: "{n} plays", topPlay1: "1 play", topEmpty: "No plays counted in {y} yet. A song counts after 30 seconds of listening.", topPlayAll: "▶ Play all", topShare: "Share my Top 10", topNote: "Counted on this device only, from the day this feature was added. Nothing is sent anywhere.", shTitle: "Share my Top 10", shSave: "Long-press the picture to save it.", shShare: "Share", shCopy: "Copy text", shCopied: "Copied!", shDone: "Done", bkHead: "Backup & restore", bkInfo: "Move your likes, playlists and Top 10 to another phone or address.", bkMake: "Create backup code", bkLoad: "Restore from code", bkMakeTitle: "Your backup code", bkMakeInfo: "Copy this code and keep it somewhere safe (for example in your notes). Paste it under “Restore from code” on the other phone.", bkLoadTitle: "Restore from code", bkLoadInfo: "Paste a backup code. Likes, playlists and Top 10 are added to what is already here; nothing is deleted.", bkPaste: "Paste your code here", bkRestore: "Restore", bkOk: "Restored! Your likes, playlists and Top 10 have been added.", bkBad: "This code doesn’t look right. Please copy the whole code and try again."
   },
   ko: {
+    tabNew: "신곡", nsBarTab: "최근 30일 동안 추가된 {n}곡 · 최신순",
     share: "곡 공유", linkCopied: "링크를 복사했어요", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "공유된 곡이에요. 재생 버튼을 눌러 들어 보세요",
     playNext: "다음에 재생", addQueue: "대기열에 추가", addedQueue: "대기열에 추가했어요", addedNext: "다음 곡으로 재생돼요", queueTitle: "대기열", nowPlaying: "지금 재생 중", upNextQueue: "대기열의 다음 곡", upNextList: "목록의 다음 곡", clearQueue: "대기열 비우기", queueEmpty: "대기열이 비어 있어요. 곡 옆의 +를 눌러 추가해 보세요.", addToPlaylist: "플레이리스트에 추가", openQueue: "대기열 열기", removeQ: "대기열에서 삭제", nothingPlaying: "아직 재생 중인 곡이 없어요.",
     tabAll: "전체 곡", tabPrograms: "프로그램", tabLiked: "좋아요", tabLists: "플레이리스트",
@@ -683,6 +685,7 @@ const UI = {
     tabTop: "나의 Top 10", topTitle: "나의 Top 10 · {y}", topTotal: "{y}년에 {n}곡을 들었어요", topDistinct: "서로 다른 {n}곡", topPlays: "{n}회", topPlay1: "1회", topEmpty: "{y}년에 기록된 재생이 아직 없어요. 30초 이상 들은 곡부터 기록돼요.", topPlayAll: "▶ 전체 재생", topShare: "나의 Top 10 공유", topNote: "이 기기에서만, 이 기능이 추가된 날부터 기록돼요. 어디에도 전송되지 않아요.", shTitle: "나의 Top 10 공유", shSave: "이미지를 길게 눌러 저장하세요.", shShare: "공유", shCopy: "텍스트 복사", shCopied: "복사했어요!", shDone: "완료", bkHead: "백업 및 복원", bkInfo: "좋아요, 플레이리스트, Top 10을 다른 휴대폰이나 주소로 옮길 수 있어요.", bkMake: "백업 코드 만들기", bkLoad: "코드로 복원", bkMakeTitle: "백업 코드", bkMakeInfo: "이 코드를 복사해 안전한 곳(예: 메모)에 보관하세요. 다른 휴대폰에서 “코드로 복원”에 붙여 넣으면 돼요.", bkLoadTitle: "코드로 복원", bkLoadInfo: "백업 코드를 붙여 넣으세요. 좋아요, 플레이리스트, Top 10이 지금 있는 것에 더해지며, 아무것도 삭제되지 않아요.", bkPaste: "여기에 코드를 붙여 넣으세요", bkRestore: "복원", bkOk: "복원했어요! 좋아요, 플레이리스트, Top 10이 추가됐어요.", bkBad: "코드가 올바르지 않아요. 코드 전체를 복사해서 다시 시도해 주세요."
   },
   ja: {
+    tabNew: "新曲", nsBarTab: "過去30日間に追加された {n} 曲 · 新しい順",
     share: "曲をシェア", linkCopied: "リンクをコピーしました", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "シェアされた曲を開きました。再生をタップして聴いてください",
     playNext: "次に再生", addQueue: "再生待ちに追加", addedQueue: "再生待ちに追加しました", addedNext: "次に再生します", queueTitle: "再生待ち", nowPlaying: "再生中", upNextQueue: "再生待ちの次の曲", upNextList: "リストの次の曲", clearQueue: "再生待ちをクリア", queueEmpty: "再生待ちは空です。曲の横の + をタップして追加できます。", addToPlaylist: "プレイリストに追加", openQueue: "再生待ちを開く", removeQ: "再生待ちから削除", nothingPlaying: "まだ再生していません。",
     tabAll: "すべての曲", tabPrograms: "番組", tabLiked: "いいね", tabLists: "プレイリスト",
@@ -709,6 +712,7 @@ const UI = {
     tabTop: "マイ Top 10", topTitle: "マイ Top 10 · {y}", topTotal: "{y}年は {n} 曲を再生しました", topDistinct: "{n} 種類の曲", topPlays: "{n} 回", topPlay1: "1 回", topEmpty: "{y}年の再生記録はまだありません。30秒以上聴くと1回と数えます。", topPlayAll: "▶ すべて再生", topShare: "マイ Top 10 をシェア", topNote: "この端末にのみ記録され、この機能が追加された日から数えています。どこにも送信されません。", shTitle: "マイ Top 10 をシェア", shSave: "画像を長押しして保存できます。", shShare: "シェア", shCopy: "テキストをコピー", shCopied: "コピーしました！", shDone: "完了", bkHead: "バックアップと復元", bkInfo: "いいね・プレイリスト・Top 10 を別のスマホや別のアドレスに移せます。", bkMake: "バックアップコードを作成", bkLoad: "コードから復元", bkMakeTitle: "あなたのバックアップコード", bkMakeInfo: "このコードをコピーして安全な場所（メモなど）に保存してください。別のスマホの「コードから復元」に貼り付けます。", bkLoadTitle: "コードから復元", bkLoadInfo: "バックアップコードを貼り付けてください。いいね・プレイリスト・Top 10 は今のデータに追加され、何も削除されません。", bkPaste: "ここにコードを貼り付け", bkRestore: "復元", bkOk: "復元しました！いいね・プレイリスト・Top 10 を追加しました。", bkBad: "コードが正しくないようです。コード全体をコピーしてもう一度お試しください。"
   },
   "zh-Hans": {
+    tabNew: "新歌", nsBarTab: "最近 30 天新增的 {n} 首歌 · 最新的在前",
     share: "分享歌曲", linkCopied: "链接已复制", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "已打开分享的歌曲，点击播放即可收听",
     playNext: "下一首播放", addQueue: "加入播放队列", addedQueue: "已加入播放队列", addedNext: "将在下一首播放", queueTitle: "播放队列", nowPlaying: "正在播放", upNextQueue: "队列中的下一首", upNextList: "列表中的下一首", clearQueue: "清空队列", queueEmpty: "队列是空的。点歌曲旁的 + 来添加。", addToPlaylist: "加入歌单", openQueue: "打开播放队列", removeQ: "从队列移除", nothingPlaying: "还没有播放歌曲。",
     tabAll: "全部歌曲", tabPrograms: "节目", tabLiked: "喜欢", tabLists: "歌单",
@@ -735,6 +739,7 @@ const UI = {
     tabTop: "我的 Top 10", topTitle: "我的 Top 10 · {y}", topTotal: "{y} 年你听了 {n} 首歌", topDistinct: "共 {n} 首不同的歌", topPlays: "{n} 次", topPlay1: "1 次", topEmpty: "{y} 年还没有记录。一首歌听满 30 秒才会被记录。", topPlayAll: "▶ 全部播放", topShare: "分享我的 Top 10", topNote: "只记录在这台设备上，从加入此功能的那天开始。不会上传到任何地方。", shTitle: "分享我的 Top 10", shSave: "长按图片即可保存。", shShare: "分享", shCopy: "复制文字", shCopied: "已复制！", shDone: "完成", bkHead: "备份与恢复", bkInfo: "把你的喜欢、歌单和 Top 10 转移到另一台手机或另一个网址。", bkMake: "生成备份码", bkLoad: "用备份码恢复", bkMakeTitle: "你的备份码", bkMakeInfo: "复制这串备份码并妥善保存（例如存进备忘录）。在另一台手机的“用备份码恢复”里粘贴即可。", bkLoadTitle: "用备份码恢复", bkLoadInfo: "粘贴备份码。喜欢、歌单和 Top 10 会加入现有的记录，不会删除任何内容。", bkPaste: "在这里粘贴备份码", bkRestore: "恢复", bkOk: "恢复成功！你的喜欢、歌单和 Top 10 已加入。", bkBad: "备份码似乎不正确。请复制完整的备份码后再试。"
   },
   "zh-Hant": {
+    tabNew: "新歌", nsBarTab: "最近 30 天新增的 {n} 首歌 · 最新的在前",
     share: "分享歌曲", linkCopied: "連結已複製", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "已開啟分享的歌曲，點擊播放即可收聽",
     playNext: "下一首播放", addQueue: "加入播放佇列", addedQueue: "已加入播放佇列", addedNext: "將在下一首播放", queueTitle: "播放佇列", nowPlaying: "正在播放", upNextQueue: "佇列中的下一首", upNextList: "列表中的下一首", clearQueue: "清空佇列", queueEmpty: "佇列是空的。點歌曲旁的 + 來加入。", addToPlaylist: "加入歌單", openQueue: "開啟播放佇列", removeQ: "從佇列移除", nothingPlaying: "還沒有播放歌曲。",
     tabAll: "全部歌曲", tabPrograms: "節目", tabLiked: "喜歡", tabLists: "歌單",
@@ -934,7 +939,9 @@ $("lang").addEventListener("change", applyThemeText);
 
 // ---------- Rendering ----------
 function renderTabs() {
-  const tabs = [["all", t("tabAll")], ["programs", t("tabPrograms")], ["liked", t("tabLiked") + " " + (likes.size || "")], ["lists", t("tabLists") + " " + (playlists.length || "")], ["top", t("tabTop")]];
+  const tabs = [["all", t("tabAll")]];
+  if (recentNew.length) tabs.push(["new", t("tabNew") + " " + recentNew.length]);
+  tabs.push(["programs", t("tabPrograms")], ["liked", t("tabLiked") + " " + (likes.size || "")], ["lists", t("tabLists") + " " + (playlists.length || "")], ["top", t("tabTop")]);
   const nav = $("tabs"); nav.innerHTML = "";
   for (const [key, label] of tabs) {
     const b = el("button", "tab", label.trim());
@@ -971,6 +978,7 @@ function getVisible() {
   let list;
   if (pl) list = pl.songs.map(id => byId.get(id)).filter(Boolean);
   else if (view === "liked") list = songs.filter(s => likes.has(s.id));
+  else if (view === "new") list = recentNew.slice();
   else list = songs.slice();
 
   if (!pl) {
@@ -985,6 +993,7 @@ function getVisible() {
   if (!pl) {
     if (sortBy === "az") list.sort((a, b) => dTitle(a).localeCompare(dTitle(b), lang));
     else if (sortBy === "old") list.sort((a, b) => yearKey(a.year) - yearKey(b.year) || a.i - b.i);
+    else if (view === "new") list.sort((a, b) => b.added.localeCompare(a.added) || yearKey(b.year) - yearKey(a.year) || a.i - b.i);
     else list.sort((a, b) => yearKey(b.year) - yearKey(a.year) || a.i - b.i);
   }
   return list;
@@ -1143,6 +1152,7 @@ function render() {
   const c = $("content"); c.innerHTML = "";
   const pl = currentPlaylist();
   if (view.startsWith("pl:") && !pl) view = "lists";
+  if (view === "new" && !recentNew.length) view = "all";
 
   const showList = view !== "lists" && view !== "programs" && view !== "top";
   $("toolbar").style.display = view === "top" ? "none" : "";
@@ -1177,6 +1187,7 @@ function render() {
     return;
   }
   if (DL_OK && view === "liked") c.append(dlBar(list.map(s => s.id), "whereLiked"));
+  if (view === "new") c.append(el("div", "nsbar", t("nsBarTab", { n: list.length })));
   if (newOnly && view === "all") {
     const nb = el("div", "nsbar"); nb.append(el("span", null, t("nsBar", { n: list.length })));
     const all = el("button", "link", t("nsAll")); all.onclick = () => { newOnly = false; render(); }; nb.append(all); c.append(nb);
@@ -1627,7 +1638,7 @@ function showNewSongsNote() {
   txt.append(el("p", null, names + (unseen.length > 4 ? " " + t("nsMore", { n: unseen.length - 4 }) : "")));
   const go = el("button", "btn", t("nsBtn"));
   const seen = () => { try { localStorage.setItem(KEY, recentNew[0].added); } catch (e) {} box.remove(); };
-  go.onclick = () => { seen(); newOnly = true; view = "all"; yearFilter = programFilter = query = ""; $("search").value = ""; render(); window.scrollTo({ top: 0 }); };
+  go.onclick = () => { seen(); newOnly = false; view = "new"; yearFilter = programFilter = query = ""; $("search").value = ""; render(); window.scrollTo({ top: 0 }); };
   txt.append(go);
   const x = el("button", "x", "×"); x.setAttribute("aria-label", "Close"); x.onclick = seen;
   box.append(txt, x);
