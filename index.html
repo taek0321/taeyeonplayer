@@ -465,6 +465,7 @@ dialog { max-height: 82vh; overflow-y: auto; }
         <select id="lang">
           <option value="en">English</option>
           <option value="ko">한국어</option>
+          <option value="ja">日本語</option>
           <option value="zh-Hans">简体中文</option>
           <option value="zh-Hant">繁體中文</option>
         </select>
@@ -627,7 +628,7 @@ const PAUSE_PATH = "M6 5h4v14H6zm8 0h4v14h-4z";
 // "bottom" (above the version line), "search" (when a search finds nothing)
 const REQUEST_URL = "https://tally.so/r/OQQQka";
 const REQUEST_SPOTS = ["top"];
-const VERSION = "2026-11-11 v22";
+const VERSION = "2026-11-20 v23";
 const UI = {
   en: {
     share: "Share song", linkCopied: "Link copied", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "Shared song ready. Tap play to listen",
@@ -680,6 +681,32 @@ const UI = {
     niTitle: "새로운 앱 아이콘 🦋", niBody: "홈 화면에 새 아이콘을 쓰고 싶나요? 1분 정도면 되고, 좋아요·플레이리스트·Top 10도 그대로 옮겨져요.", niBtn: "새 아이콘 받기", niLater: "나중에", niDlg: "새 아이콘 받기", niS1: "좋아요, 플레이리스트, Top 10을 복사했어요.", niS1fail: "먼저 “백업 복사”를 눌러 주세요. 좋아요, 플레이리스트, Top 10을 옮길 수 있어요.", niCopy: "백업 복사", niS2: "이 앱 삭제: 아이콘을 길게 누르고 → 앱 제거 → 앱 삭제.", niS3: "Safari에서 {link} 를 열고 공유 → 홈 화면에 추가 → 추가를 누르세요.", niS4: "새 앱을 열고, 물어보면 복원을 누르세요.", niLink: "링크 복사", niLinkOk: "링크를 복사했어요!", niDone: "확인", rsTitle: "환영해요! 🦋", rsBody: "나비 아이콘의 이전 앱에서 옮겨 오셨나요? 좋아요, 플레이리스트, Top 10을 복원하세요.", rsBtn: "복원", rsNo: "괜찮아요", rsFail: "백업을 찾지 못했어요. 그 사이에 다른 것을 복사했다면, 백업 코드를 붙여 넣어서 복원할 수 있어요.",
     nsTitle: "🆕 새로운 곡 {n}곡이 추가됐어요", nsTitle1: "🆕 새로운 곡 1곡이 추가됐어요", nsMore: "외 {n}곡", nsBtn: "새 곡 보기", nsBadge: "NEW", nsBar: "최근 30일 동안 추가된 {n}곡", nsAll: "전체 곡 보기",
     tabTop: "나의 Top 10", topTitle: "나의 Top 10 · {y}", topTotal: "{y}년에 {n}곡을 들었어요", topDistinct: "서로 다른 {n}곡", topPlays: "{n}회", topPlay1: "1회", topEmpty: "{y}년에 기록된 재생이 아직 없어요. 30초 이상 들은 곡부터 기록돼요.", topPlayAll: "▶ 전체 재생", topShare: "나의 Top 10 공유", topNote: "이 기기에서만, 이 기능이 추가된 날부터 기록돼요. 어디에도 전송되지 않아요.", shTitle: "나의 Top 10 공유", shSave: "이미지를 길게 눌러 저장하세요.", shShare: "공유", shCopy: "텍스트 복사", shCopied: "복사했어요!", shDone: "완료", bkHead: "백업 및 복원", bkInfo: "좋아요, 플레이리스트, Top 10을 다른 휴대폰이나 주소로 옮길 수 있어요.", bkMake: "백업 코드 만들기", bkLoad: "코드로 복원", bkMakeTitle: "백업 코드", bkMakeInfo: "이 코드를 복사해 안전한 곳(예: 메모)에 보관하세요. 다른 휴대폰에서 “코드로 복원”에 붙여 넣으면 돼요.", bkLoadTitle: "코드로 복원", bkLoadInfo: "백업 코드를 붙여 넣으세요. 좋아요, 플레이리스트, Top 10이 지금 있는 것에 더해지며, 아무것도 삭제되지 않아요.", bkPaste: "여기에 코드를 붙여 넣으세요", bkRestore: "복원", bkOk: "복원했어요! 좋아요, 플레이리스트, Top 10이 추가됐어요.", bkBad: "코드가 올바르지 않아요. 코드 전체를 복사해서 다시 시도해 주세요."
+  },
+  ja: {
+    share: "曲をシェア", linkCopied: "リンクをコピーしました", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "シェアされた曲を開きました。再生をタップして聴いてください",
+    playNext: "次に再生", addQueue: "再生待ちに追加", addedQueue: "再生待ちに追加しました", addedNext: "次に再生します", queueTitle: "再生待ち", nowPlaying: "再生中", upNextQueue: "再生待ちの次の曲", upNextList: "リストの次の曲", clearQueue: "再生待ちをクリア", queueEmpty: "再生待ちは空です。曲の横の + をタップして追加できます。", addToPlaylist: "プレイリストに追加", openQueue: "再生待ちを開く", removeQ: "再生待ちから削除", nothingPlaying: "まだ再生していません。",
+    tabAll: "すべての曲", tabPrograms: "番組", tabLiked: "いいね", tabLists: "プレイリスト",
+    search: "曲名・歌手を検索…", sortNew: "新しい順", sortOld: "古い順", sortAz: "A–Z",
+    allYears: "すべての年", allPrograms: "すべての番組", originalBy: "原曲：{name}",
+    pick: "曲を選んで再生", songsN: "{n} 曲", song1: "1 曲",
+    like: "{title} にいいね", unlike: "{title} のいいねを取り消す", add: "{title} をプレイリストに追加", remove: "{list} から {title} を削除",
+    showFrom: "{x} の曲を表示", newListPh: "新しいプレイリスト名", createList: "プレイリストを作成",
+    noLists: "プレイリストはまだありません。上で名前を入力するか、曲の横の + をタップして作成できます。",
+    allLists: "‹ すべてのプレイリスト", playAll: "すべて再生", rename: "名前を変更", del: "削除", renamePrompt: "プレイリスト名を変更",
+    delConfirm: "「{name}」を削除しますか？曲はアーカイブに残ります。",
+    emptyList: "このプレイリストは空です。「すべての曲」で曲の横の + をタップして追加してください。",
+    emptyLiked: "いいねした曲はまだありません。曲の横のハートをタップするとここに保存されます。",
+    noMatch: "条件に合う曲がありません。", clear: "フィルターをクリア",
+    sheetTitle: "「{title}」をプレイリストに追加", sheetNone: "プレイリストはまだありません。下に名前を入力して作成してください。",
+    sheetNew: "新しいプレイリスト名", create: "作成", done: "完了",
+    programsIntro: "番組をタップすると曲が表示されます。",
+    errMissing: "{where} が見つかりません。", errBroken: "{where} を再生できません。", errOffline: "{where} を読み込めませんでした。接続を確認してください。",
+    skipping: "次の曲にスキップしています…", version: "プレーヤーのバージョン {v}", preDebut: "デビュー前", language: "言語",
+    reqTop: "🦋 曲をリクエスト", reqFind: "聴きたい曲が見つかりませんか？", reqHere: "こちらからリクエスト", reqWant: "この曲を追加してほしいですか？",
+    selSelect: "選択", selN: "{n} 曲を選択中", selAll: "すべて選択", selAdd: "プレイリストに追加", selCancel: "キャンセル", selSheet: "{n} 曲をプレイリストに追加",
+    niTitle: "新しいアプリアイコン 🦋", niBody: "ホーム画面のアイコンを新しくしませんか？1分ほどで終わり、いいね・プレイリスト・Top 10 もそのまま引き継げます。", niBtn: "新しいアイコンにする", niLater: "あとで", niDlg: "新しいアイコンにする", niS1: "いいね・プレイリスト・Top 10 をコピーしました。", niS1fail: "まず「バックアップをコピー」をタップしてください。いいね・プレイリスト・Top 10 を引き継げます。", niCopy: "バックアップをコピー", niS2: "このアプリを削除：アイコンを長押し → アプリを削除 → アプリを削除。", niS3: "Safari で {link} を開き、共有 → ホーム画面に追加 → 追加 をタップ。", niS4: "新しいアプリを開き、表示されたら「復元」をタップ。", niLink: "リンクをコピー", niLinkOk: "リンクをコピーしました！", niDone: "OK", rsTitle: "ようこそ！🦋", rsBody: "蝶のアイコンの旧アプリから来ましたか？いいね・プレイリスト・Top 10 を復元できます。", rsBtn: "復元", rsNo: "結構です", rsFail: "バックアップが見つかりませんでした。途中で別のものをコピーした場合は、バックアップコードを貼り付けて復元できます。",
+    nsTitle: "🆕 {n} 曲を追加しました", nsTitle1: "🆕 1 曲を追加しました", nsMore: "ほか {n} 曲", nsBtn: "新曲を見る", nsBadge: "NEW", nsBar: "過去30日間に追加された {n} 曲を表示中", nsAll: "すべての曲を表示",
+    tabTop: "マイ Top 10", topTitle: "マイ Top 10 · {y}", topTotal: "{y}年は {n} 曲を再生しました", topDistinct: "{n} 種類の曲", topPlays: "{n} 回", topPlay1: "1 回", topEmpty: "{y}年の再生記録はまだありません。30秒以上聴くと1回と数えます。", topPlayAll: "▶ すべて再生", topShare: "マイ Top 10 をシェア", topNote: "この端末にのみ記録され、この機能が追加された日から数えています。どこにも送信されません。", shTitle: "マイ Top 10 をシェア", shSave: "画像を長押しして保存できます。", shShare: "シェア", shCopy: "テキストをコピー", shCopied: "コピーしました！", shDone: "完了", bkHead: "バックアップと復元", bkInfo: "いいね・プレイリスト・Top 10 を別のスマホや別のアドレスに移せます。", bkMake: "バックアップコードを作成", bkLoad: "コードから復元", bkMakeTitle: "あなたのバックアップコード", bkMakeInfo: "このコードをコピーして安全な場所（メモなど）に保存してください。別のスマホの「コードから復元」に貼り付けます。", bkLoadTitle: "コードから復元", bkLoadInfo: "バックアップコードを貼り付けてください。いいね・プレイリスト・Top 10 は今のデータに追加され、何も削除されません。", bkPaste: "ここにコードを貼り付け", bkRestore: "復元", bkOk: "復元しました！いいね・プレイリスト・Top 10 を追加しました。", bkBad: "コードが正しくないようです。コード全体をコピーしてもう一度お試しください。"
   },
   "zh-Hans": {
     share: "分享歌曲", linkCopied: "链接已复制", shareText: "{title} · TAEYEON’s Music Archive", sharedReady: "已打开分享的歌曲，点击播放即可收听",
@@ -741,6 +768,7 @@ function detectLang() {
   if (saved && UI[saved]) return saved;
   const n = (navigator.language || "en").toLowerCase();
   if (n.startsWith("ko")) return "ko";
+  if (n.startsWith("ja")) return "ja";
   if (n.startsWith("zh")) return /tw|hk|mo|hant/.test(n) ? "zh-Hant" : "zh-Hans";
   return "en";
 }
@@ -871,6 +899,7 @@ $("lang").addEventListener("change", e => {
 // ---------- Light / dark mode ----------
 const THEME_TEXT = {
   en: { label: "Appearance", auto: "◐ Auto", light: "☀ Light", dark: "☾ Dark" },
+  ja: { label: "表示モード", auto: "◐ 自動", light: "☀ ライト", dark: "☾ ダーク" },
   ko: { label: "화면 모드", auto: "◐ 자동", light: "☀ 라이트", dark: "☾ 다크" },
   "zh-Hans": { label: "外观", auto: "◐ 自动", light: "☀ 浅色", dark: "☾ 深色" },
   "zh-Hant": { label: "外觀", auto: "◐ 自動", light: "☀ 淺色", dark: "☾ 深色" }
@@ -1203,6 +1232,17 @@ const DLT = {
     prog: "{n}곡 중 {i}번째 다운로드 중 · {p}%", keep: "끝날 때까지 앱을 열어 두세요.", stop: "중지", stopped: "중지됨. {n}곡 중 {d}곡 다운로드됨.", done: "✓ 완료: {n}곡을 오프라인으로 들을 수 있어요.",
     card: "⬇ 다운로드한 곡", cardSome: "{n}곡 · 이 기기에 {size}", cardNone: "아직 없어요. 좋아요 목록이나 플레이리스트에서 곡을 다운로드할 수 있어요.",
     manage: "관리", mTitle: "다운로드한 곡", rm: "삭제", rmAll: "모두 삭제", rmAllConfirm: "이 기기에서 다운로드한 곡을 모두 삭제할까요?", doneBtn: "완료", mark: "다운로드됨" },
+  ja: { checking: "容量を確認中…", noSpace: "この端末の空き容量が足りません。約 {size} 必要です。ダウンロードを一部削除するか空き容量を増やしてから、もう一度お試しください。", failed: "{n} 曲をダウンロードできませんでした。インターネット接続を確認して、もう一度ダウンロードをタップしてください。", unsupported: "このブラウザではダウンロードできません。", btn: "⬇ ダウンロード", nOfM: "<b>{n} 曲中 {d} 曲</b>をダウンロード済み", all: "✓ <b>{n} 曲すべてダウンロード済み</b> · {size}", rmDl: "ダウンロードを削除",
+    rmConfirm: "これらの曲のダウンロードを削除しますか？曲は{where}に残り、再生にはインターネットが必要になります。", whereLiked: "いいねした曲", wherePl: "このプレイリスト",
+    title1: "{where}から 1 曲をダウンロードしますか？", titleN: "{where}から {n} 曲をダウンロードしますか？", size: "約 {size} がこの端末に保存され、インターネットなしで聴けるようになります。",
+    wOpen: "⚠️ <b>ダウンロードが終わるまでアプリを開いたままにしてください。</b>アプリを閉じたり、画面をロックしたり、他のアプリに切り替えたりするとダウンロードが止まります。",
+    wIos: "📱 <b>iPhone では、ホーム画面のアプリでのみダウンロードが保持されます。</b>Safari のタブでは約1週間後に削除されることがあります。",
+    wIosBrowser: "今はブラウザで開いています。先にプレーヤーをホーム画面に追加し（共有 → ホーム画面に追加）、そこからダウンロードしてください。",
+    wAndroid: "💾 ダウンロードした曲は、自分で削除するか、ブラウザの設定でこのサイトのデータを消去するまで残ります。",
+    wData: "📶 モバイルデータでは約 <b>{size}</b> を使用します。", cancel: "キャンセル", go: "ダウンロード",
+    prog: "{n} 曲中 {i} 曲目をダウンロード中 · {p}%", keep: "終わるまでアプリを開いたままにしてください。", stop: "停止", stopped: "停止しました。{n} 曲中 {d} 曲をダウンロード済み。", done: "✓ 完了：{n} 曲をオフラインで聴けます。",
+    card: "⬇ ダウンロードした曲", cardSome: "{n} 曲 · この端末で {size}", cardNone: "まだありません。いいねやプレイリストを開くと、オフライン用に曲をダウンロードできます。",
+    manage: "管理", mTitle: "ダウンロードした曲", rm: "削除", rmAll: "すべて削除", rmAllConfirm: "この端末からダウンロードした曲をすべて削除しますか？", doneBtn: "完了", mark: "ダウンロード済み" },
   "zh-Hans": { checking: "正在计算大小…", noSpace: "此设备空间不足：大约需要 {size}。请删除部分下载或腾出空间后再试。", failed: "有 {n} 首歌下载失败。请检查网络后再点一次下载。", unsupported: "此浏览器不支持下载。", btn: "⬇ 下载", nOfM: "已下载 <b>{d}/{n}</b> 首", all: "✓ <b>{n} 首已全部下载</b> · {size}", rmDl: "删除下载",
     rmConfirm: "删除这些歌曲的下载吗？歌曲仍保留在{where}中，只是需要联网才能播放。", whereLiked: "喜欢的歌曲", wherePl: "这个歌单",
     title1: "从{where}下载 1 首歌？", titleN: "从{where}下载 {n} 首歌？", size: "约 {size} 将保存在此设备上，无需网络也能播放。",
